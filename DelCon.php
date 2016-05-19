@@ -2,7 +2,7 @@
 
 if($_GET['id']){
 $id =  $_GET['id'];
-echo $id;
+//echo $id;
 include 'conn.php';
 $sql ="DELETE FROM datatable
 WHERE dataID='$id'";
