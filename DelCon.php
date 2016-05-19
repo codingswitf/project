@@ -7,10 +7,12 @@ WHERE dataID='$id'";
 echo $id;
 $R = mysqli_query($conn,$sql);
 if(isset($R)){
+	echo $id;
 			?>
     <script>
 	alert("SomeThing Wrong !!");
-	window.location = "ManageContent.php";
+//	window.location = "ManageContent.php";
+
 	</script>
     <?php
 }
