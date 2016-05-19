@@ -8,12 +8,12 @@ $sql ="DELETE FROM datatable
 WHERE dataID='$id'";
 
 $R = mysqli_query($conn,$sql);
-if(isset($R)){
+if(!$R){
 //echo $id;
 			?>
     <script>
 	alert("SomeThing Wrong !!");
-//	window.location = "ManageContent.php";
+	window.location = "ManageContent.php";
 
 	</script>
     <?php
