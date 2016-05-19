@@ -26,7 +26,10 @@ $lnameAd= $_SESSION['lastname'];
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+    .All{
+    	height: 100%;
+    	
+    }
     /* Add a gray background color and some padding to the footer */
     footer {
 	  background-color: #f2f2f2;
