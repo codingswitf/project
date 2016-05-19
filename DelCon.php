@@ -2,6 +2,7 @@
 
 if($_GET['id']){
 $id =  $_GET['id'];
+echo $id;
 include 'conn.php';
 $sql ="DELETE FROM datatable
 WHERE dataID='$id'";
@@ -12,7 +13,7 @@ if(isset($R)){
 			?>
     <script>
 	alert("SomeThing Wrong !!");
-	window.location = "ManageContent.php";
+//	window.location = "ManageContent.php";
 
 	</script>
     <?php
