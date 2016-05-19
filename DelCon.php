@@ -3,9 +3,10 @@
 if($_GET['id']){
 include 'conn.php';
 $sql ="DELETE FROM datatable
-WHERE dataID='$id';";
+WHERE dataID='$id'";
+echo $id;
 $R = mysqli_query($conn,$sql);
-if(!$R){
+if(isset($R)){
 			?>
     <script>
 	alert("SomeThing Wrong !!");
