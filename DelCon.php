@@ -1,17 +1,18 @@
 <?php
 
 if($_GET['id']){
+$id =  $_GET['id'];
 include 'conn.php';
 $sql ="DELETE FROM datatable
 WHERE dataID='$id'";
 
 $R = mysqli_query($conn,$sql);
 if(isset($R)){
-echo $id;
+//echo $id;
 			?>
     <script>
 	alert("SomeThing Wrong !!");
-//	window.location = "ManageContent.php";
+	window.location = "ManageContent.php";
 
 	</script>
     <?php
