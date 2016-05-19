@@ -111,6 +111,7 @@ $lnameAd= $_SESSION['lastname'];
 </center>
 </div>
 </div>
+<br><br><br><br><br><br><br><br>
 <footer class="container-fluid text-center">
   <h3>This Page For Admin Only !!</h3>
 </footer>
