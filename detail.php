@@ -55,13 +55,10 @@
            $result = $conn->query($sql);
              while($row = $result->fetch_array(MYSQL_ASSOC)){
                  echo $row;
-                   <th style="text-align:center;"><h3>$row</h3></th>
              }
-            
-
            $conn->close();
            ?>
-
+            <th style="text-align:center;"><h3>$row</h3></th>
          </tr>
        </thead>
 </body>
