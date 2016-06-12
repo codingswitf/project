@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM `datatable` ";
+$sql = "SELECT dataID, title, datet, pic FROM `datatable` ";
 $conn->query("SET names utf8");
 $myArray = array();
 $result = $conn->query($sql);
