@@ -34,6 +34,7 @@
   </div>
     </div>
     </div>
+    
     <thead>
          <tr>
            <?php
@@ -58,7 +59,8 @@
              }
            $conn->close();
            ?>
-            <th style="text-align:center;"><h3><?php echo $row; ?></h3></th>
+           <font color="red"><?php echo $row; ?></font>
+           // <th style="text-align:center;"><h3><?php echo $row; ?></h3></th>
          </tr>
        </thead>
 </body>
