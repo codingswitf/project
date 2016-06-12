@@ -59,7 +59,7 @@
              }
            $conn->close();
            ?>
-           <font color="red"><?php echo $row; ?></font>
+           <font color="red"><center><?php echo $row; ?></center></font>
            // <th style="text-align:center;"><h3><?php echo $row; ?></h3></th>
          </tr>
        </thead>
