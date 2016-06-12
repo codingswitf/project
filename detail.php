@@ -54,11 +54,11 @@
            $myArray = array();
            $result = $conn->query($sql);
              while($row = $result->fetch_array(MYSQL_ASSOC)){
-                echo $row["detail"];
+                 echo $row["detail"];
              }
            $conn->close();
            ?>
-           // <th style="text-align:center;"><h3>$row</h3></th>
+            <th style="text-align:center;"><h3><?php echo $row; ?></h3></th>
          </tr>
        </thead>
 </body>
