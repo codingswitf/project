@@ -9,7 +9,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$dataID = $_POST["dataID"];
+//$dataID = $_POST["dataID"];
+$dataID = "31";
 $sql = "SELECT detail FROM `datatable` WHERE dataID = '".$dataID."' ";
 $conn->query("SET names utf8");
 $myArray = array();
