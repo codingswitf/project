@@ -11,6 +11,8 @@ if ($conn->connect_error) {
 }
 $dataID = $_POST["id"];
 //$dataID = "31";
+$str = "Hello";
+echo md5($str);
 $sql = "SELECT detail FROM `datatable` WHERE dataID = '".$dataID."' ";
 $conn->query("SET names utf8");
 $myArray = array();
