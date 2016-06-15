@@ -15,12 +15,13 @@ if ($conn->connect_error) {
 //$lastname = $_POST["lastname"];
 $email = "Wutthiphorn@gmail.com"
 $password = "123456789"
+$pass = md5($password);
 $name = "Frankys"
 $lastname = "Cha-em"
 //$dataID = "31";
 //$str = "Hello";
 //echo md5($str);
-$strSQL = "INSERT INTO member (name,lastname,email,password) VALUES ('".$name."','".$lastname."','".$email."','".$password."')";
+$strSQL = "INSERT INTO member (name,lastname,email,password) VALUES ('".$name."','".$lastname."','".$email."','".$pass."' )";
 
 $conn->query("SET names utf8");
 $result = $conn->query($strSQL);
