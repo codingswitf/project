@@ -9,17 +9,20 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-//$dataID = $_POST["id"];
+//$email = $_POST["email"];
+//$password = $_POST["Password"];
+//$name = $_POST["name"];
+//$lastname = $_POST["lastname"];
+$email = "Wutthiphorn@gmail.com"
+$password = "123456789"
+$name = "Frankys"
+$lastname = "Cha-em"
 //$dataID = "31";
-$str = "Hello";
-echo md5($str);
-//$sql = "SELECT detail FROM `datatable` WHERE dataID = '".$dataID."' ";
-//$conn->query("SET names utf8");
-//$myArray = array();
-//$result = $conn->query($sql);
- // while($row = $result->fetch_array(MYSQL_ASSOC)){
- //     $myArray[]=$row;
-//  }
-//echo json_encode($myArray,JSON_UNESCAPED_UNICODE);
-//$conn->close();
+//$str = "Hello";
+//echo md5($str);
+$strSQL = "INSERT INTO member (name,lastname,email,password) VALUES ('".$name."','".$lastname."','".$email."','".$password."')";
+
+$conn->query("SET names utf8");
+$result = $conn->query($strSQL);
+$conn->close();
 ?>
