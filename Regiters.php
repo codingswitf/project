@@ -21,9 +21,10 @@ $lastname = "Cha-em"
 //$dataID = "31";
 //$str = "Hello";
 //echo md5($str);
-$strSQL = "INSERT INTO register (name,lastname,email,password) VALUES ('".$name."','".$lastname."','".$email."','".$pass."' )";
+$sql = "INSERT INTO register (name,lastname,email,password)
+	VALUES ('$name','$Lname','$email','$pass');";
 
 $conn->query("SET names utf8");
-$result = $conn->query($strSQL);
+$result = $conn->query($sql);
 $conn->close();
 ?>
