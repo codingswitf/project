@@ -22,7 +22,7 @@ $lastname = "Cha-em"
 //$str = "Hello";
 //echo md5($str);
 $sql = "INSERT INTO register (name,lastname,email,password)
-	VALUES ('$name','$Lname','$email','$pass');";
+	VALUES ('$name','$lastname','$email','$pass');";
 
 $conn->query("SET names utf8");
 $result = $conn->query($sql);
