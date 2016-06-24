@@ -89,18 +89,7 @@ $lnameAd= $_SESSION['lastname'];
 			
       </ul>
    </div>
-    /*
-      <ul class="nav navbar-nav navbar-right">
-      
-  <li><a href="CreateContent.php">CreateContent</a></li>
 
-        <li><a href="signup.php">Add Admin</a></li>
-        <li><a>|</a></li>
-          <li><a href="logout.php"> log out</a></li>
-         
-      </ul>
-      
-      */
     </div>
   </div>
 </nav>
