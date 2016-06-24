@@ -59,6 +59,37 @@ $lnameAd= $_SESSION['lastname'];
       <ul class="nav navbar-nav">
         
       </ul>
+      
+    
+      <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+	
+      <ul class = "nav navbar-nav">
+         <li class = "active"><a href = "#">iOS</a></li>
+         <li><a href = "#">SVN</a></li>
+			
+         <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               Java 
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu">
+               <li><a href = "#">jmeter</a></li>
+               <li><a href = "#">EJB</a></li>
+               <li><a href = "#">Jasper Report</a></li>
+               
+               <li class = "divider"></li>
+               <li><a href = "#">Separated link</a></li>
+               
+               <li class = "divider"></li>
+               <li><a href = "#">One more separated link</a></li>
+            </ul>
+            
+         </li>
+			
+      </ul>
+   </div>
+    /*
       <ul class="nav navbar-nav navbar-right">
       
   <li><a href="CreateContent.php">CreateContent</a></li>
@@ -66,17 +97,10 @@ $lnameAd= $_SESSION['lastname'];
         <li><a href="signup.php">Add Admin</a></li>
         <li><a>|</a></li>
           <li><a href="logout.php"> log out</a></li>
-          <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-       
-  <li><a href="CreateContent.php">CreateContent</a></li>
-
-        <li><a href="signup.php">Add Admin</a></li>
-        <li><a>|</a></li>
-          <li><a href="logout.php"> log out</a></li>
-  </div>
-</nav>
+         
       </ul>
+      
+      */
     </div>
   </div>
 </nav>
