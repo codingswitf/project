@@ -66,7 +66,16 @@ $lnameAd= $_SESSION['lastname'];
         <li><a href="signup.php">Add Admin</a></li>
         <li><a>|</a></li>
           <li><a href="logout.php"> log out</a></li>
-  
+          <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+       
+  <li><a href="CreateContent.php">CreateContent</a></li>
+
+        <li><a href="signup.php">Add Admin</a></li>
+        <li><a>|</a></li>
+          <li><a href="logout.php"> log out</a></li>
+  </div>
+</nav>
       </ul>
     </div>
   </div>
