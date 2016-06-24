@@ -59,42 +59,21 @@ $lnameAd= $_SESSION['lastname'];
       <ul class="nav navbar-nav">
         
       </ul>
+      <ul class="nav navbar-nav navbar-right">
       
-    
-      <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-	
-      <ul class = "nav navbar-nav">
-         <li class = "active"><a href = "#">iOS</a></li>
-         <li><a href = "#">SVN</a></li>
-			
-         <li class = "dropdown">
-            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
-               Java 
-               <b class = "caret"></b>
-            </a>
-            
-            <ul class = "dropdown-menu">
-               <li><a href = "#">jmeter</a></li>
-               <li><a href = "#">EJB</a></li>
-               <li><a href = "#">Jasper Report</a></li>
-               
-               <li class = "divider"></li>
-               <li><a href = "#">Separated link</a></li>
-               
-               <li class = "divider"></li>
-               <li><a href = "#">One more separated link</a></li>
-            </ul>
-            
-         </li>
-			
-      </ul>
-   </div>
 
+
+        <li><a href="signup.php">Add Admin</a></li>
+        <li><a>|</a></li>
+          <li><a href="logout.php"> log out</a></li>
+         
+      </ul>
     </div>
   </div>
 </nav>
 <div style="float:right; margin-right:30px; margin-top:5px; color:#4141FE;">
 <?php if($nameAd && $lnameAd){ echo "Welcome ".$nameAd." ".$lnameAd ; }?>
+  <li><a href="CreateContent.php">CreateContent</a></li>
 </div><!-- admin name -->
 <center>
 
